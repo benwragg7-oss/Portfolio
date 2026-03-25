@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The about page will help you to learn lots of information about me. Find out who I am, what skills I have, what my education is, the hobbies I do, and my experience with websites. ">
+    <meta name="keywords" content="about, about us, information, portfolio, Who I Am, skills, education, hobbies, experience, edinburgh, scotland, website, web development">
+    <meta name="author" content="Ben Wragg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    
+<!-- Start of NavBar -->
+
+<button id="open-sidebar-button" onclick="openSidebar()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+</button>
+
+<nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+        </button>
+      </li>
+      <li class="home-li"><a href="index.html"><img src="Images/logo.svg" alt="Logo"></a></li>        
+      <li><a href="index.html">Home</a></li>
+      <li><a class ="active-link" href="#">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- End of Navbar -->
+
+
+
+
+
+
+    <!-- About Content -->
+    <main class="about-section">
+        <div class="container">
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+            <div class="sub-heading">
+                <h2>Who I Am</h2>
+            </div>
+            <div class="about-content">
+                <h3 class="row-heading">First row heading</h3>
+                <div class="row">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, nisl at ultricies fringilla, lacus nunc pulvinar velit, nec varius justo orci at purus. Curabitur sit amet felis vitae urna bibendum volutpat. Integer et velit vel mauris faucibus bibendum a nec metus. Cras eget nibh vitae neque ultricies facilisis. Sed sit amet orci quis justo efficitur ultricies sit amet in sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi scelerisque, justo et fermentum ullamcorper, leo ligula sagittis eros, nec tincidunt nisi purus a sapien.</p>
+                    </div>
+                    <div class="image">
+                        <img src="Images/landscape-2.jpg" alt="About image">
+                    </div>
+                </div>
+                <h3 class="row-heading">Second row heading</h3>
+                <div class="row">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar suscipit purus, vitae lacinia metus interdum ut. Sed non tortor nec arcu aliquet luctus vitae nec nulla. Maecenas nec nulla vitae elit venenatis facilisis. Vivamus cursus, mauris a venenatis interdum, nisl purus ornare lectus, sed consequat urna metus sit amet magna. Aliquam erat volutpat. Suspendisse potenti. Nunc dignissim, sapien quis convallis placerat, nibh ipsum porttitor mi, sed egestas ligula urna at risus. Integer facilisis turpis vitae est volutpat, in egestas justo vulputate.</p>
+                    </div>
+                    <div class="image">
+                        <img src="Images/landscape-2.jpg" alt="About image">
+                    </div>
+                </div>
+                <h3 class="row-heading">Third row heading</h3>
+                <div class="row">
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet eros sit amet lorem malesuada fringilla. Phasellus sit amet consequat nisi. Duis quis turpis eu justo vehicula tincidunt. Cras ultricies urna at nisi vulputate, in tempus odio fringilla. Integer et sapien ut ligula varius fermentum. Ut nec tortor nec tellus volutpat aliquet non a nulla.</p>
+                    </div>
+                    <div class="image">
+                        <img src="Images/landscape-2.jpg" alt="About image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:Info@example.com</p>
+            <p>Phone:+121 56556 565556</p>
+            <p>Address:Your Address 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+                <ul class="list">
+                <li><a href="index.html"><p>Home</p></a></li>
+                <li><a href="about.html"><p>About</p></a></li>
+                <li><a href="gallery.html"><p>Gallery</p></a></li>
+                <li><a href="contact.html"><p>Contact</p></a></li>
+                </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://en-gb.facebook.com/"><img src="Images/facebook.svg" alt="Facebook Icon"></img></a></li>
+                <li><a href="https://x.com/?lang=en-gb"><img src="Images/twitter.svg" alt="Twitter Icon"></i></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.svg" alt="Instagram Icon"></img></a></li>
+                <li><a href="https://www.linkedin.com/feed/"><img src="Images/linkedin.svg" alt="LinkedIn Icon"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2026 Portfolio . All rights reserved</p>
+    </div>
+</footer>
+
+<!-- End of Footer -->
+
+<!--JavaScript-->
+    <script src="navbar.js" defer></script>
+
+</body>
+</html>

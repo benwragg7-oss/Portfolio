@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact us for support, enquiries or to get in touch. You can send us a message by using our online contact form, email address or by phoning or texting us using the provided phone number. ">
+    <meta name="keywords" content="contact, contact us, get in touch, email, phone, address, social media, map, location, form, message, submit, edinburgh, scotland">
+    <meta name="author" content="Ben Wragg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    
+<!-- Start of NavBar -->
+
+<button id="open-sidebar-button" onclick="openSidebar()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+</button>
+
+<nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+        </button>
+      </li>
+      <li class="home-li"><a href="index.html"><img src="Images/logo.svg" alt="Logo"></a></li>        
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- End of Navbar -->
+
+<section>
+  <div class="contactUs">
+    <div class="title">
+      <h1>Get in Touch</h1>
+    </div>
+    <div class="box">
+      <div class="contact form">
+        <h2>Send a Message</h2>
+        <form id="contact-form" method="POST">
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span class="input-title">First Name</span>
+                <input type="text" id="fname" name="fname" placeholder="John">
+                <span id="fnameError" class="error-msg"></span>
+              </div>
+              <div class="inputBox">
+                <span class="input-title">Last Name</span>
+                <input type="text" id="lname" name="lname" placeholder="Doe">
+                <span id="lnameError" class="error-msg"></span>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span class="input-title"><p>Email</p></span>
+                <input type="text" id="email" name="email" placeholder="Johndoe@email.com">
+                <span id="emailError" class="error-msg"></span>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span class="input-title"><p>Message</p></span>
+                <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- shows contact information -->
+      <div class="contact info">
+      <h3>Contact Info</h3>
+        <div class="infoBox">
+          <div>
+            <span><ion-icon name="location"></ion-icon></span>
+            <p>Midlothian, Edinburgh <br>Scotland</p>
+          </div>
+          <div>
+            <span><ion-icon name="mail"></ion-icon></span>
+            <a href="mailto:loremipsum@email.com">loremipsum@email.com</a>
+          </div>
+          <div>
+            <span><ion-icon name="call"></ion-icon></span>
+            <a href="tel:+441234567890">+44 1234 567890</a>
+          </div>
+
+          <!-- show links to all limelight social media -->
+          <ul class="sci">
+            <li><a href="https://en-gb.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://x.com/?lang=en-gb"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/feed/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- shows google map of limelight cinima location -->
+      <div class="contact map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286901.20738595584!2d-3.4379370118501362!3d55.820743930336924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488794d54deeb667%3A0xb631fd243f1e1e31!2sMidlothian!5e0!3m2!1sen!2suk!4v1766102946817!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:Info@example.com</p>
+            <p>Phone:+121 56556 565556</p>
+            <p>Address:Your Address 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+                <ul class="list">
+                <li><a href="index.html"><p>Home</p></a></li>
+                <li><a href="about.html"><p>About</p></a></li>
+                <li><a href="gallery.html"><p>Gallery</p></a></li>
+                <li><a href="contact.html"><p>Contact</p></a></li>
+                </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://en-gb.facebook.com/"><img src="Images/facebook.svg" alt="Facebook Icon"></img></a></li>
+                <li><a href="https://x.com/?lang=en-gb"><img src="Images/twitter.svg" alt="Twitter Icon"></i></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.svg" alt="Instagram Icon"></img></a></li>
+                <li><a href="https://www.linkedin.com/feed/"><img src="Images/linkedin.svg" alt="LinkedIn Icon"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2026 Portfolio . All rights reserved</p>
+    </div>
+</footer>
+
+<!-- End of Footer -->
+
+<!--JavaScript-->
+    <script src="navbar.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

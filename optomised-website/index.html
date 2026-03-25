@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta name="description" content="The home page of my portfolio website will welcome you to the website and show you what the features of the website are. The page will also let go to the about and contact page for more details.">
+    <meta name="keywords" content="portfolio, home, welcome, features, web development, web design, webdeveloper, edinburgh, scotland">
+    <meta name="author" content="Ben Wragg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    
+<!-- Start of NavBar -->
+
+<button id="open-sidebar-button" onclick="openSidebar()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+</button>
+
+<nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+        </button>
+      </li>
+      <li class="home-li"><a href="index.html"><img src="Images/logo.svg" alt="Logo"></a></li>           
+      <li><a class ="active-link" href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+
+<div id="overlay" onclick="closeSidebar()"></div>
+
+<!-- End of Navbar -->
+
+<div class="home-page">
+<div class="hero">
+    <h1>Welcome to my portfolio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <a class="btn" href="about.html">Learn More</a>
+        <div class="hero-image">
+            <img src="Images/landscape.jpg" alt="landscape">
+        </div>
+</div>
+
+    <div class="section-heading">
+        <h2>Past Project Descriptions</h2>
+    </div>
+<div class="container">
+    <div class="features">
+        <div class="feature-images">
+        <img src="Images/landscape-2.jpg" alt="Sample image 1">
+        </div>
+        <div class="feature-details">
+        <h3>Past project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div class="features">
+        <img src="Images/landscape-3.jpg" alt="Sample image 2">
+        <h3>Past project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>  
+	<div class="features">
+        <img src="Images/landscape-4.jpg" alt="Sample image 3">
+        <h3>Past project 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+		voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </div>
+</div>
+<!-- Footer -->
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email:Info@example.com</p>
+            <p>Phone:+121 56556 565556</p>
+            <p>Address:Your Address 123 street</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+                <ul class="list">
+                <li><a href="index.html"><p>Home</p></a></li>
+                <li><a href="about.html"><p>About</p></a></li>
+                <li><a href="gallery.html"><p>Gallery</p></a></li>
+                <li><a href="contact.html"><p>Contact</p></a></li>
+                </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://en-gb.facebook.com/"><img src="Images/facebook.svg" alt="Facebook Icon"></img></a></li>
+                <li><a href="https://x.com/?lang=en-gb"><img src="Images/twitter.svg" alt="Twitter Icon"></i></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.svg" alt="Instagram Icon"></img></a></li>
+                <li><a href="https://www.linkedin.com/feed/"><img src="Images/linkedin.svg" alt="LinkedIn Icon"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2026 Portfolio . All rights reserved</p>
+    </div>
+</footer>
+
+<!-- End of Footer -->
+
+<!--JavaScript-->
+    <script src="navbar.js" defer></script>
+
+</body>
+</html>
