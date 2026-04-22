@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 40px;
+}
+
 /* Navbar CSS */
 nav {
     background-color: #378752;
@@ -11,6 +17,11 @@ nav {
     padding: 1em;
     text-align: right;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 nav ul {
@@ -100,7 +111,7 @@ nav img {
     gap: 40px;
     flex-wrap: wrap;
     margin: auto;
-
+    padding: 40px;
 }
 
 .about-section .heading,
@@ -144,20 +155,20 @@ nav img {
 
 /* Start of Gallery */
 
-.gallery-page .container {
+.gallery .container {
     max-width: 1100px;
     padding: 40px 20px;
     margin: auto;
 }
 
-.gallery-page .header {
+.gallery .header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
 }
 
-.gallery-page .sub-header {
+.gallery .sub-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,13 +177,13 @@ nav img {
     padding-bottom: 50px;
 }
 
-.gallery-page .heading {
+.gallery .heading {
     width: 100%;
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.gallery-page .gallery-row {
+.gallery .gallery-row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +192,7 @@ nav img {
 
 }
 
-.gallery-page .gallery-row img {
+.gallery .gallery-row img {
     flex: 20%;
     width: 300px;
     height: auto;
@@ -296,10 +307,8 @@ nav img {
 
 /* start of home page */
 
-.home-page {
+.home {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -338,11 +347,14 @@ nav img {
 
 .hero-image img {
     margin-top: 40px;
-    max-width: 100%;
+    max-width: 1100px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
-.home-page .container {
+.home .container {
     max-width: 1100px;
     padding: 40px 20px;
     width: 100%;
@@ -375,6 +387,12 @@ nav img {
     border-radius: 10px;
     object-fit: cover;
 }
+
+.fearures-list{
+    text-align: left;
+    padding: 0 20px;
+}
+
 
 /* End of home page /*
 
